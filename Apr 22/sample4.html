@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sample 3</title>
+	<style>
+		
+		/*Existence Selector*/
+		p[class]{
+			/* color: darkcyan; */
+		}
+		
+		/*Equality Selector*/
+		p[class="dog"]{
+			/* color: deeppink; */
+		}
+		
+		/*Space Selector*/
+		p[class~="dog"]{
+			/* color: lawngreen; */
+		}
+		
+		/*Prefix Selector*/
+		p[class ^="d"]{
+			/* color: purple; */
+		}
+		
+		/*SubString Selector*/
+		p[class*="do"]{
+			/* color: maroon; */
+		}
+		
+		/*Suffix Selector*/
+		p[class $="g"]{
+			/* color: darkblue; */
+		}
+	</style>
+</head>
+<body>
+	<p class="dog" > This is some text</p>
+</body>
+</html>

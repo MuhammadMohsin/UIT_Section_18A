@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* Child Selectors */
+        div.container > p {
+            /* color: darkcyan; */
+        }
+
+         /* Descendant Selectors */
+         div.container p {
+            /* color: darkcyan; */
+        }
+
+        /* Adjacent Sibling Selector */
+        .big-font+p{
+            /* font-size: 25px; */
+        }
+
+        /* General Sibling Selector */ 
+        .big-font~p{
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <p>This is my paragraph</p>
+        <p>This is my paragraph</p>
+        <p>This is my paragraph</p>
+        <div>
+            <p>This is my internal paragraph</p>
+        </div>
+    </div> -->
+
+    <p>This is my paragraph 1</p>
+    <p class="big-font">This is my paragraph 2</p>
+    <p>This is my paragraph 3</p>
+    <p>This is my paragraph 4</p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /****** Universal Selector ******/
+        * {
+            font-family: Courier;
+        }
+
+
+        /****** Type Selector ******/
+        h2,h3 {
+            /* color: darkcyan; */
+        }
+
+
+        /****** Class Selector ******/
+        .text-red {
+            /* color: red; */
+        }
+
+
+        /****** ID Selector ******/
+        #text-bold {
+            /* font-weight: bold;
+            font-size: 20px; */
+        }
+
+
+        /****** Child Selector ******/
+        .container > p {
+            /* color: darkblue;
+            font-size: 25px; */
+        }
+
+
+        /****** Descendant Selector ******/
+        .container p {
+            /* color: darkblue;
+            font-size: 25px;  */
+        }
+
+        /****** Adjacent Sibling Selector ******/
+        .text-big + p{
+            /* font-size: 25px; */
+        }
+
+        /****** General Sibling Selector ******/
+        .text-big ~ p{
+            /* font-size: 25px; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is my Sample heading 1</h1>
+    <h1>This is my Sample heading 2</h1>
+
+
+    <h2>This is for my type selector in h2 </h2>
+    <h3>This is for my type selector in h3 </h3>
+
+    <p class="text-red"> This is my paragraph for class selector</p>
+    <p class="text-red"> This is my paragraph for class selector</p>
+
+    <p id="text-bold"> This is my paragraph for id selector </p>
+
+    <div class="container">
+        <p>Child 1</p>
+        <p>Child 2</p>
+        <div>
+            <p>Child 3-1</p>
+        </div>
+    </div>
+
+
+    <p class="text-big"> This is paragraph 1</p>
+    <p> This is paragraph 2</p>
+    <p> This is paragraph 3</p>
+    <p> This is paragraph 4</p>
+
+</body>
+
+</html>
